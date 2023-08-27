@@ -37,7 +37,7 @@ body{
 }
 .buttons{
     border: 1px solid black;
-    
+    background-color: whitesmoke;
     text-decoration: none;
     border-radius: 5px;
     padding: 7px;
@@ -63,9 +63,11 @@ body{
 }
 .one{
     margin-right: 80px;
+    
 }
 .two{
     text-decoration: none; 
+    height: 100%;
 }
 .imgs{
     width: 80px;
@@ -78,6 +80,16 @@ body{
     margin-top: 0;
     margin: 0;
     border: 1px solid #9CCDDB ;
+}
+.form-submit{
+    margin: 0;
+    border: 0.1px solid #9CCDDB ;
+
+}
+.two:hover{
+    background-color: rgb(131, 156, 156);
+    color: rgb(12, 5, 5);
+    transform: scale(1.1);
 }
 
 

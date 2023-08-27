@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KBCode</title>
+    <link rel="icon" href="kbcode-low-resolution-logo-black-on-white-background.png">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,33 +24,39 @@
     <div  class="navigation">
     <img src="kbcode-low-resolution-logo-black-on-white-background.png" class="imgs">
     <ul class="lists" style="list-style-type: none;">
-        <li class="one"><a href="" class="two">Home</a></li>
+        <li class="one"><a href="./index.html" class="two">Home</a></li>
         <li class="one"><a href="" class="two">Course</a></li>
         <li class="one"><a href="" class="two">About</a></li>
         <li class="one"><a href="" class="two">Service</a></li>
-        <li class="one"><a href="" class="two">Contact</a></li>
+        <li class="one"><a href="./contact.html" class="two">Contact</a></li>
     </ul>
     </div>
     <h1 align="center" class="space">Seek your potential in programming</h1><br><br>
     <div class="item" id="right">
         <label for="name" id="left" >your name</label>
-        <input type="text" name="name" id="name" placeholder="ROOT" class="width" >
+        <input type="text" name="name" id="name" placeholder="ROOT" class="width" minlength="2" maxlength="17" pattern="[a-zA-Z]+" >
         <label for="e-mail" id="left" >E-mail</label>
         <input type="text" name="email" id="email" placeholder="example@gmail.com" class="width">
         <p id="left">Choose your gender</p>
         <form class="border">
             <label for="gender">
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="female">Female
-                <input type="radio" name="gender" value="other">Other
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
             </label>
         </form>
         <p id="left">Choose your status</p>
         <form class="border1">
             <label for="status">
-                <input type="radio" name="status" value="student">Student
-                <input type="radio" name="status" value="employee">Employee
-                <input type="radio" name="status" value="Umemployee">Umemployee
+                <input type="radio" id="student" name="status" value="student">
+                <label for="">Student</label>
+                <input type="radio" id="employee" name="status" value="employee">
+                <label for="employee">Employee</label>
+                <input type="radio" id="umemployee" name="status" value="Umemployee">
+                <label for="umemployee">Umemployee</label>
             </label>
         </form>
        <a id="left" href="https://zowikira.github.io/programming/" target="_blank" class="buttons">Submit</a>
